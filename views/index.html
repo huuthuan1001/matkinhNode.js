@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý sản phẩm mắt kính</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quản lý sản phẩm mắt kính</h1>
+
+      <form id="productForm">
+        <input type="text" id="name" placeholder="Tên sản phẩm" required />
+        <input type="text" id="description" placeholder="Mô tả" required />
+        <input type="number" id="price" placeholder="Giá" required />
+        <input type="text" id="category" placeholder="Tên danh mục" required />
+        <button type="submit">Thêm sản phẩm</button>
+      </form>
+
+      <h2>Danh sách sản phẩm</h2>
+      <div id="productList"></div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
