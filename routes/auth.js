@@ -214,4 +214,21 @@ router.get("/avatars/:filename", function (req, res, next) {
   res.sendFile(pathFile);
 });
 //67de10517282904fbca502ae
+router.post("/logout", (req, res, next) => {
+  try {
+    const tokenCookieName = "token";
+    const cookieOptions = {
+      httpOnly: true,
+      signed: true,
+    };
+
+    res.clearCookie(tokenCookieName, cookieOptions);
+
+    CreateSuccessRes(res, { message: "Đăng xuất thành công." }, 200);
+  } catch (error) {
+    console.error("Lỗi khi đăng xuất:", error);
+    next(new Error("Đã xảy ra lỗi trong quá trình đăng xuất."));
+  }
+});
+
 module.exports = router;

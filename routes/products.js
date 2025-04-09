@@ -49,6 +49,7 @@ router.post("/", async function (req, res, next) {
         quantity: body.quantity,
         category: category._id,
         slug: slug(body.name, { lower: true }),
+        urlImg: body.urlImg,
       });
       await newProduct.save();
       CreateSuccessRes(res, newProduct, 200);
