@@ -49,6 +49,7 @@ router.post("/", async function (req, res, next) {
         quantity: body.quantity,
         category: category._id,
         slug: slug(body.name, { lower: true }),
+        description: body.description,
         urlImg: body.urlImg,
       });
       await newProduct.save();

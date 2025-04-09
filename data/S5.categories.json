@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "67f382ce905e0adc8cffd1a5"
+  },
+  "name": "Mắt kính cho nam",
+  "description": "Loại mắt kính thời trang cho nam giới",
+  "slug": "electronics",
+  "isDeleted": false
+},
+{
+  "_id": {
+    "$oid": "67f386b9905e0adc8cffd1bf"
+  },
+  "name": "Mắt kính nữ",
+  "description": "Mắt kính thời trang cao cấp dành cho nữ giới.",
+  "isDeleted": false,
+  "slug": "mat-kinh-nu"
+},
+{
+  "_id": {
+    "$oid": "67f6aeb9533e92ffce34c42b"
+  },
+  "name": "Lens",
+  "description": "",
+  "isDeleted": false,
+  "slug": "Lens",
+  "createdAt": {
+    "$date": "2025-04-09T17:30:33.608Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T17:30:33.608Z"
+  },
+  "__v": 0
+}]

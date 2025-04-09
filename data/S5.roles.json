@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "67f3ac535bdf5564bcbd1fc8"
+  },
+  "name": "admin",
+  "description": "Quản trị viên",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2025-04-07T10:43:31.668Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T10:43:31.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3ac535bdf5564bcbd1fce"
+  },
+  "name": "user",
+  "description": "Người dùng thường",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2025-04-07T10:43:31.682Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T10:43:31.682Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,176 @@
+[{
+  "_id": {
+    "$oid": "67f6a8ed533e92ffce34c408"
+  },
+  "name": "Mắt kính nu de thuong",
+  "price": 789000,
+  "quantity": 50,
+  "description": "Mắt kính thoi trang sieu cute ",
+  "urlImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjg-6JsJWdEj-rSpBK2-fGruQCwPBRVsq-TQ&s",
+  "category": {
+    "$oid": "67f386b9905e0adc8cffd1bf"
+  },
+  "isDeleted": false,
+  "slug": "mat-kinh-nu-de-thuong",
+  "createdAt": {
+    "$date": "2025-04-09T17:05:49.218Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T17:05:49.218Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6a9e7533e92ffce34c40e"
+  },
+  "name": "Mắt kính nam neee",
+  "price": 189000,
+  "quantity": 50,
+  "description": "Mắt kính nam ",
+  "urlImg": "https://tse-mm.bing.com/th?q=m%E1%BA%AFt%20k%C3%ADnh%20nam",
+  "category": {
+    "$oid": "67f382ce905e0adc8cffd1a5"
+  },
+  "isDeleted": false,
+  "slug": "mat-kinh-nam-neee",
+  "createdAt": {
+    "$date": "2025-04-09T17:09:59.393Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T17:09:59.393Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6ac58533e92ffce34c41d"
+  },
+  "name": "Mắt kính nam thoi trang cute",
+  "price": 1100,
+  "quantity": 10,
+  "description": "Mắt kính nam thoi trang cute ",
+  "urlImg": "https://i.vietgiaitri.com/2020/3/6/20-mau-kinh-thoi-trang-nam-dang-chu-y-dau-2020-db7-4735379.jpg",
+  "category": {
+    "$oid": "67f382ce905e0adc8cffd1a5"
+  },
+  "isDeleted": false,
+  "slug": "mat-kinh-nam-thoi-trang-cute",
+  "createdAt": {
+    "$date": "2025-04-09T17:20:24.525Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T17:20:24.525Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6ad1c533e92ffce34c420"
+  },
+  "name": "Mắt kính nam thoi trangggg",
+  "price": 11100,
+  "quantity": 10,
+  "description": "Mắt kính nam thoi trang  ",
+  "urlImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJVy_IM2wNPDSkc5Agqb5WeiiFqFFZW0u6Q&s",
+  "category": {
+    "$oid": "67f382ce905e0adc8cffd1a5"
+  },
+  "isDeleted": false,
+  "slug": "mat-kinh-nam-thoi-trangggg",
+  "createdAt": {
+    "$date": "2025-04-09T17:23:40.406Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T17:23:40.406Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6ad67533e92ffce34c426"
+  },
+  "name": "Mắt kính nam ne11",
+  "price": 8100,
+  "quantity": 10,
+  "description": "Mắt kính nam thoi trang  ",
+  "urlImg": "https://tse-mm.bing.com/th?q=m%E1%BA%AFt%20k%C3%ADnh%20nam",
+  "category": {
+    "$oid": "67f382ce905e0adc8cffd1a5"
+  },
+  "isDeleted": false,
+  "slug": "mat-kinh-nam-ne11",
+  "createdAt": {
+    "$date": "2025-04-09T17:24:55.965Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T17:24:55.965Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6add7533e92ffce34c429"
+  },
+  "name": "Mắt kính nu sieu xinh",
+  "price": 12100,
+  "quantity": 40,
+  "description": "Mắt kính nu shieu xinh dep  ",
+  "urlImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoT0QglzoreMdPzSnrXOQNbqf58O9yA42Szw&s",
+  "category": {
+    "$oid": "67f386b9905e0adc8cffd1bf"
+  },
+  "isDeleted": false,
+  "slug": "mat-kinh-nu-sieu-xinh",
+  "createdAt": {
+    "$date": "2025-04-09T17:26:47.350Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T17:26:47.350Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6af6c533e92ffce34c42e"
+  },
+  "name": "lens xanh cute",
+  "price": 11100,
+  "quantity": 40,
+  "description": "lens mau xanh ",
+  "urlImg": "https://cf.shopee.vn/file/sg-11134201-7qvez-lgukc0822a6236",
+  "category": {
+    "$oid": "67f6aeb9533e92ffce34c42b"
+  },
+  "isDeleted": false,
+  "slug": "lens-xanh-cute",
+  "createdAt": {
+    "$date": "2025-04-09T17:33:32.846Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T17:33:32.846Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f6b036533e92ffce34c431"
+  },
+  "name": "lens can nhieu mau",
+  "price": 56100,
+  "quantity": 30,
+  "description": "lens can co nhieu mau ",
+  "urlImg": "https://down-vn.img.susercontent.com/file/sg-11134201-7reop-m2qeiyvednnfcb.webp",
+  "category": {
+    "$oid": "67f6aeb9533e92ffce34c42b"
+  },
+  "isDeleted": false,
+  "slug": "lens-can-nhieu-mau",
+  "createdAt": {
+    "$date": "2025-04-09T17:36:54.615Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-09T17:36:54.615Z"
+  },
+  "__v": 0
+}]

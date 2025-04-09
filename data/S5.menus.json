@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "67f530ac3c601025a089912b"
+  },
+  "text": "Nam cao cấp",
+  "URL": "/nam-cao-cap",
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2025-04-08T14:20:28.297Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T14:28:23.895Z"
+  },
+  "__v": 0,
+  "parent": null
+},
+{
+  "_id": {
+    "$oid": "67f530f03c601025a089912e"
+  },
+  "text": "Kính mát",
+  "URL": "/kinh-mat",
+  "isDeleted": true,
+  "parent": {
+    "$oid": "67f530ac3c601025a089912b"
+  },
+  "createdAt": {
+    "$date": "2025-04-08T14:21:36.581Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-08T14:26:31.686Z"
+  },
+  "__v": 0
+}]

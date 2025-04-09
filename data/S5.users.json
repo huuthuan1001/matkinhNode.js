@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "67f3f4345edd038076812d2e"
+  },
+  "username": "User01",
+  "password": "$2b$10$o0bYvv7aOs5uDy49P1Akre930uybV8gz/7nki7g/QUrZ.mjUlls4m",
+  "email": "User01@gmail.com",
+  "fullName": "",
+  "avatarUrl": "",
+  "loginCount": "0",
+  "role": {
+    "$oid": "67f3ac535bdf5564bcbd1fce"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-04-07T15:50:12.175Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T15:50:12.175Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3f6085edd038076812d32"
+  },
+  "username": "User03",
+  "password": "$2b$10$rNzuLC7zbMs7MXZPCp3Fte/40FZxm0UGKcEdsD.47KvOABEsfGvvq",
+  "email": "User03@gmail.com",
+  "fullName": "",
+  "avatarUrl": "",
+  "loginCount": "0",
+  "role": {
+    "$oid": "67f3ac535bdf5564bcbd1fce"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-04-07T15:58:00.935Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T15:58:00.935Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3fcdd9a7ac1fb759741af"
+  },
+  "username": "User1",
+  "password": "$2b$10$582V5Nk4TDhEu7JdAjZsZu6dsxwlGQefBhnoHjye40uS0f5QIPPPS",
+  "email": "User1@gmail.com",
+  "fullName": "",
+  "avatarUrl": "",
+  "loginCount": "0",
+  "role": {
+    "$oid": "67f3ac535bdf5564bcbd1fce"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-04-07T16:27:09.255Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T16:27:09.255Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f4000c0073d1dba798f58b"
+  },
+  "username": "user10",
+  "password": "$2b$10$MQsFyYGAOAds2mN.v.PF.edBO/RNLhbzR/WJ2jwFtEsUrN5OXsaL6",
+  "email": "user10@gmail.com",
+  "fullName": "",
+  "avatarUrl": "",
+  "loginCount": "0",
+  "role": {
+    "$oid": "67f3ac535bdf5564bcbd1fce"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-04-07T16:40:44.328Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T16:40:44.328Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f403cfb787a97f951f6311"
+  },
+  "username": "User11",
+  "password": "$2b$10$d46iJoo9LWp/ByhGsS8JgupIkG4WJz9GBW91ci3pr5DCA2mBf3/dG",
+  "email": "User11@gmail.com",
+  "fullName": "",
+  "avatarUrl": "",
+  "loginCount": "0",
+  "role": {
+    "$oid": "67f3ac535bdf5564bcbd1fce"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-04-07T16:56:47.915Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T16:56:47.915Z"
+  },
+  "__v": 0
+}]
