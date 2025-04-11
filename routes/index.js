@@ -7,9 +7,8 @@ router.get("/", async function (req, res, next) {
   try {
     let products = await productModel
       .find({ isDeleted: false })
-      .populate("category", "name description"); // Populating category
+      .populate("category", "name description");
 
-    // Đọc và trả về HTML với danh sách sản phẩm
     let html = `
       <!DOCTYPE html>
       <html lang="en">

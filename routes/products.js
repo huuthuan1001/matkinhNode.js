@@ -10,7 +10,7 @@ router.get("/", async function (req, res, next) {
   try {
     let products = await productModel
       .find({ isDeleted: false })
-      .populate("category", "name description"); // Populating category
+      .populate("category", "name description");
 
     CreateSuccessRes(res, products, 200);
   } catch (error) {

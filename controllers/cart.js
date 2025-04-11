@@ -1,11 +1,10 @@
 const Cart = require("../schemas/cart");
-const Product = require("../schemas/products"); // Đảm bảo bạn đã có Product model
+const Product = require("../schemas/products"); 
 const {
   CreateSuccessRes,
   CreateErrorRes,
-} = require("../utils/responseHandler"); // Sử dụng response handler của bạn
+} = require("../utils/responseHandler"); 
 
-// Hàm trợ giúp: Lấy hoặc tạo giỏ hàng cho user
 async function getOrCreateCart(userId) {
   let cart = await Cart.findOne({ user: userId });
   if (!cart) {
@@ -16,7 +15,7 @@ async function getOrCreateCart(userId) {
 }
 
 module.exports = {
-  // Xem giỏ hàng
+ 
   viewCart: async (req, res, next) => {
     try {
       const userId = req.user._id;
@@ -35,11 +34,11 @@ module.exports = {
       CreateSuccessRes(res, cart, 200);
     } catch (error) {
       console.error("Lỗi khi xem giỏ hàng:", error);
-      next(error); // Chuyển lỗi cho global error handler
+      next(error); 
     }
   },
 
-  // Thêm sản phẩm vào giỏ hàng
+ 
   addItem: async (req, res, next) => {
     const { productId, quantity = 1 } = req.body;
     const userId = req.user._id;
@@ -61,7 +60,7 @@ module.exports = {
       const cart = await getOrCreateCart(userId);
       const itemIndex = cart.items.findIndex((item) =>
         item.product.equals(productId)
-      ); // So sánh ObjectId
+      );
 
       if (itemIndex > -1) {
         cart.items[itemIndex].quantity += parseInt(quantity, 10);
@@ -73,7 +72,6 @@ module.exports = {
       }
 
       await cart.save();
-      // Populate lại để trả về thông tin đầy đủ
       await cart.populate({
         path: "items.product",
         select: "name price imageUrl",
@@ -86,8 +84,8 @@ module.exports = {
   },
 
   updateItemQuantity: async (req, res, next) => {
-    const { productId } = req.params; // Lấy productId từ URL parameter
-    const { quantity } = req.body; // Lấy quantity mới từ request body
+    const { productId } = req.params; 
+    const { quantity } = req.body; 
     const userId = req.user._id;
 
     if (!quantity || quantity < 1) {
@@ -95,10 +93,6 @@ module.exports = {
     }
 
     try {
-      // Kiểm tra tồn kho trước khi cập nhật (nếu cần)
-      // const product = await Product.findById(productId);
-      // if (!product || product.stock < quantity) { ... }
-
       const cart = await Cart.findOne({ user: userId });
       if (!cart) {
         return CreateErrorRes(res, "Giỏ hàng không tìm thấy.", 404);
@@ -126,7 +120,7 @@ module.exports = {
   },
 
   removeItem: async (req, res, next) => {
-    const { productId } = req.params; // Lấy productId từ URL parameter
+    const { productId } = req.params; 
     const userId = req.user._id;
 
     try {
@@ -154,7 +148,7 @@ module.exports = {
     }
   },
 
-  // Xóa toàn bộ giỏ hàng
+  
   clearCart: async (req, res, next) => {
     const userId = req.user._id;
     try {

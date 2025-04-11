@@ -41,7 +41,7 @@ module.exports = {
       })
       .populate("role");
   },
-  // controllers/users.js -> Sửa lại CreateAnUser
+
   CreateAnUser: async function (username, password, email, rolename) {
     try {
       let role = await roleModel.findOne({ name: rolename });
@@ -55,12 +55,11 @@ module.exports = {
 
       let user = new userModel({
         username: username,
-        // --- TRUYỀN MẬT KHẨU GỐC VÀO ĐÂY ---
-        password: password, // Để pre('save') hook tự xử lý hash
+        password: password,
         email: email,
         role: role._id,
       });
-      return await user.save(); // Hook pre('save') sẽ hash trước khi lưu
+      return await user.save();
     } catch (error) {
       throw error;
     }

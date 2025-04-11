@@ -14,7 +14,8 @@ var orderRoutes = require("./routes/order");
 var app = express();
 app.use(
   cors({
-    origin: "*",
+    origin: "http://localhost:5173",
+    credentials: true,
   })
 );
 
@@ -23,7 +24,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/S5");
 mongoose.connection.on("connected", async () => {
   console.log("MongoDB connected");
 
-  // ✅ Seed 2 role: admin và user
+  //  admin và user
   const Role = require("./schemas/role");
   const roles = [
     { name: "admin", description: "Quản trị viên" },
@@ -34,9 +35,9 @@ mongoose.connection.on("connected", async () => {
     const exists = await Role.findOne({ name: roleData.name });
     if (!exists) {
       await Role.create(roleData);
-      console.log(`✅ Role '${roleData.name}' đã được tạo.`);
+      console.log(` Role '${roleData.name}' đã được tạo.`);
     } else {
-      console.log(`ℹ️ Role '${roleData.name}' đã tồn tại.`);
+      console.log(` Role '${roleData.name}' đã tồn tại.`);
     }
   }
 });
@@ -68,7 +69,6 @@ app.use(function (req, res, next) {
 // Xử lý lỗi chung
 app.use(function (err, req, res, next) {
   res.locals.message = err.message;
-  // res.locals.error = req.app.get("env") === "development" ? err : {};
   CreateErrorRes(res, err.message, err.status || 500);
 });
 
@@ -77,5 +77,5 @@ module.exports = app;
 // Khởi động server
 var port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`🚀 Server is running on http://localhost:${port}`);
+  console.log(` Server is running on http://localhost:${port}`);
 });
